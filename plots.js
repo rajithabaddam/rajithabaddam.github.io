@@ -1,9 +1,9 @@
 // Use D3 fetch to read the JSON file
 // The data from the JSON file is arbitrarily named importedData as the argument
 d3.json("data/data.json").then((importedData) => {
-  // console.log(importedData);
+  console.log(importedData);
   var data = importedData;
-
+  
   // Sort the data array using the greekSearchResults value
   data.sort(function(a, b) {
     return parseFloat(b.greekSearchResults) - parseFloat(a.greekSearchResults);
